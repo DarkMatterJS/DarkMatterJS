@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "typings": "index.d.ts",
+  "license": "MIT",
   "scripts": {
-    "lint": "eslint --ext js,jsx,ts,tsx ./src",
-    "format": "prettier-eslint --write 'src/**/*.{js,jsx,ts,tsx}'",
     "build": "tsc -b tsconfig.json",
     "clean": "tsc -b tsconfig.json --clean",
-    "prepublish": "yarn run build",
-    "release": "standard-version"
+    "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ../../.prettierignore",
+    "lint": "eslint . --ext .js,.ts --ignore-path='../../.eslintignore'",
+    "test": "jest --coverage",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
 }

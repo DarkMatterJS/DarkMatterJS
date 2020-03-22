@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "typings": "index.d.ts",
+  "license": "MIT",
   "scripts": {
-    "lint": "eslint --ext js,jsx,ts,tsx ./src",
-    "format": "prettier-eslint --write 'src/**/*.{js,jsx,ts,tsx}'",
     "build": "tsc -b tsconfig.json",
     "clean": "tsc -b tsconfig.json --clean",
-    "prepublish": "yarn run build",
-    "release": "standard-version"
+    "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ../../.prettierignore",
+    "lint": "eslint . --ext .js,.ts --ignore-path='../../.eslintignore'",
+    "test": "jest --coverage",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@types/eslint": "^6.1.8",
+    "@types/eslint-plugin-prettier": "^2.2.0",
+    "@types/node": "^13.9.2",
+    "@types/prettier": "^1.19.0",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/eslint-plugin-tslint": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
@@ -44,15 +49,10 @@
     "eslint-plugin-simple-import-sort": "^5.0.2",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-unicorn": "^17.2.0",
-    "tslint": "^6.1.0"
-  },
-  "devDependencies": {
-    "@types/eslint": "^6.1.8",
-    "@types/eslint-plugin-prettier": "^2.2.0",
-    "@types/node": "^13.9.2",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "prettier": "^2.0.1",
-    "ts-node": "^8.8.1"
+    "ts-node": "^8.8.1",
+    "tslint": "^6.1.0"
   }
 }

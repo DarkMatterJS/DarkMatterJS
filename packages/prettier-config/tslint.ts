@@ -1,11 +1,11 @@
 import * as tslint from 'tslint'
 
-import * as prettier_options from '.'
+import * as prettierOptions from '.'
 
 const config: tslint.Configuration.RawConfigFile = {
   rules: {
     // tslint-plugin-prettier
-    prettier: [true, prettier_options],
+    prettier: [true, prettierOptions],
   },
 }
 

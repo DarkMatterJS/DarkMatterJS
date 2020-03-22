@@ -1,14 +1,22 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "CommonJS",
-    "removeComments": true,
-    "target": "es5",
-    "strict": true,
-    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "esModuleInterop": true,
-    "noImplicitAny": false,
-    "types": ["node"],
-    "typeRoots": ["node_modules/@types", "./typings"]
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es2017",
+    // "sourceMap": true,
+    // "declaration": true,
+    // "declarationMap": true,
+    "lib": ["esnext"],
+    "types": ["node", "jest"]
   }
 }

@@ -1,4 +1,9 @@
 {
   "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "typeRoots": ["node_modules/@types", "typings"]
+  },
+  "include": ["typings", "**/*.ts", "**/*.d.ts"],
   "exclude": ["node_modules"]
 }

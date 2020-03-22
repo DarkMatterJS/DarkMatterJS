@@ -1,3 +1,11 @@
 # package.json is formatted by package managers, so we ignore it here
-package.json
+# package.json
 node_modules
+
+.github
+.circleci
+.vscode
+CONTRIBUTORS.md
+
+# Ignore CHANGELOG.md files to avoid issues with automated release job
+CHANGELOG.md
