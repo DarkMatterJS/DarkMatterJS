@@ -1,9 +1,9 @@
 {
-  "name": "darkmatterjs-config",
+  "name": "darkmatterjs",
   "version": "0.0.0-development",
   "private": true,
-  "url": "https://github.com/darkmatterjs/darkmatterjs-config",
-  "repository": "https://github.com/darkmatterjs/darkmatterjs-config",
+  "url": "https://github.com/darkmatterjs/darkmatterjs",
+  "repository": "https://github.com/darkmatterjs/darkmatterjs",
   "workspaces": [
     "packages/*"
   ],
