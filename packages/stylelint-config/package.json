@@ -20,5 +20,6 @@
     "stylelint-order": "^4.0.0",
     "stylelint-prettier": "^1.1.1",
     "stylelint-scss": "^3.15.0"
-  }
+  },
+  "devDependencies": {}
 }
