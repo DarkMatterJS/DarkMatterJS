@@ -21,7 +21,7 @@
     "format": "run-s format:*",
     "format:prettier": "prettier --write \"./**/*.{ts,js,json,md}\"",
     "format:eslint": "eslint . --ext .js,.ts --fix",
-    "format-check": "prettier --list-different \"./**/*.{ts,js,json,md}\"",
+    "format-check": "prettier --list-different \"./**/*.{ts,json,md}\"",
     "prepare-release": "standard-version",
     "semantic-release": "semantic-release"
   },
