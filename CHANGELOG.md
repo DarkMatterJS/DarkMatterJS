@@ -1,3 +1,10 @@
+### [1.0.1](https://github.com/darkmatterjs/darkmatterjs/compare/v1.0.0...v1.0.1) (2020-03-23)
+
+
+### 🔧 Fixes
+
+* **tsconfig-config:** tconfig not being able to extend tsconfig-config ([92aa032](https://github.com/darkmatterjs/darkmatterjs/commit/92aa032249222db2ab8ae4de08b901b7d65a4c33))
+
 ## 1.0.0 (2020-03-22)
 
 
