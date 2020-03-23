@@ -1,12 +1,9 @@
 {
-  "name": "@darkmatterjs/tsconfig",
+  "name": "@darkmatterjs/tsconfig-config",
   "version": "1.0.0",
-  "main": "index.js",
-  "typings": "index.d.ts",
+  "main": "tsconfig.json",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -b tsconfig.json",
-    "clean": "tsc -b tsconfig.json --clean",
     "format": "prettier --write \"./**/*.{ts,js,json,md}\" --ignore-path ../../.prettierignore",
     "lint": "eslint . --ext .js,.ts --ignore-path='../../.eslintignore'",
     "test": "jest --coverage",
@@ -15,5 +12,8 @@
   "dependencies": {
     "typescript": "^3.8.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/serialize-javascript": "^1.5.0",
+    "serialize-javascript": "^3.0.0"
+  }
 }
